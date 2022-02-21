@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CROUDS</title>
+</head>
+<body>
+ 
+    <div class="walid" >
+        <div class="w1">
+            <h2>Walid Youssfi</h2>
+            <p>Produktmanagementsystem</p>
+
+        </div>
+        <div class="w2">
+            <input type="text" placeholder="Titel" id="Titel">
+        <div class="youssfi">
+            <input onkeyup="gesa()" type="number" placeholder="Preis" id="Preis">
+            <input onkeyup="gesa()" type="number" placeholder="Steuern" id="Steuern">
+            <input onkeyup="gesa()" type="number" placeholder="Anzeigen" id="Anzeigen">
+            <input onkeyup="gesa()" type="number" placeholder="Rabatt" id="Rabatt">
+            <small id="gesamt">2358</small>
+        </div>
+        <input type="number" placeholder="zählen" id="zählen">
+        <input type="text" placeholder="Kategorie" id="Kategorie">
+        <button id="erstellen">erstellen</button>
+        </div>
+
+        <div class="w3"></div>
+            <div class="S1">
+                <input  onkeyup="swy(this.value)"  type="text" placeholder="Suche" id="Suchee">
+            <div class="btnS">
+                <button  onclick ="gesuchewalid(this.id)" id="stitle">Suche nach Titel  </button>
+                <button  onclick ="gesuchewalid(this.id)"  id="skategorie">Suche nach Kategorie</button>
+
+            </div>
+            <div id="loschenall">
+
+            </div>
+            <Table>
+                    <tr>
+                        <th>identifizieren</th>
+                        <th>Titel</th>
+                        <th>Preis</th>
+                        <th>Steuern</th>
+                        <th>Anzeigen</th>
+                        <th>Rabatt</th>
+                        <th>gesamt</th>
+                        <th>Kategorie</th>
+                        <th>aktualisieren</th>
+                        <th>löschen</th>
+                    </tr>
+                        <tbody id="td">
+                           
+                        </tbody>
+            </Table>
+            </div>
+
+        </div>
+            <script src="main.js"></script>
+</body>
+</html>
